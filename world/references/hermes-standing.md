@@ -2,7 +2,7 @@
 world: hermetic-gates
 kind: reference-permissions
 stage: 00_setup
-status: draft
+status: approved
 generated: 2026-09-29
 scope: Narrow permissions for Hermes standing ceremonial-state reference.
 depends_on: []

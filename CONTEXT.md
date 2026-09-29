@@ -20,7 +20,10 @@ Product (new each run): `runs/<set>/<shot>/`, numbered by the stage that wrote e
 ## Status is whatever exists
 
 A stage is complete when its output file carries `status: approved` in its
-frontmatter. A person flips that line, not the agent, and not a script.
+frontmatter. Approval is a human decision: the operator may edit the file or
+give clear approval in chat that names the reviewed output or scope. After that
+explicit approval, the agent may record only the approval metadata (`status`,
+and a render record's `verdict`) without changing the generated body.
 
 A stage refuses to run until the stage before it is approved. Status lives
 nowhere else: there is no tracker, no board, no separate state file. To know

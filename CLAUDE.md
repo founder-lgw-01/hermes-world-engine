@@ -34,7 +34,9 @@ you are working in. Load what that contract names and nothing more.
   contract, not a suggestion.
 - Load the full workspace to answer 1 question. Read the contract, its named
   references, and its inputs. Nothing more.
-- Edit a generated file by hand. Run the thing that generates it.
+- Edit a generated file's substantive content by hand. Run the thing that
+  generates it. After explicit operator approval, an agent may change only
+  approval metadata (`status`, and a render record's `verdict`).
 - Invent a number, a date, or a quote. Count it, cite it, or mark it unknown.
 - Edit `AGENTS.md` by hand. It is a copy of `CLAUDE.md` for hosts that read
   `AGENTS.md` first; change `CLAUDE.md`, then copy it over `AGENTS.md` again.

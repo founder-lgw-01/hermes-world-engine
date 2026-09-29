@@ -2,7 +2,7 @@
 world: hermetic-gates
 kind: environment-location
 stage: 00_setup
-status: draft
+status: approved
 generated: 2026-09-29
 scope: Owns the foreground temple-like gateway structure and its immediate paving.
 depends_on:

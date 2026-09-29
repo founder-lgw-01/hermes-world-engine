@@ -2,7 +2,7 @@
 world: hermetic-gates
 kind: environment-index
 stage: 00_setup
-status: draft
+status: approved
 generated: 2026-09-29
 scope: Selective-loading index; no environment facts live here.
 depends_on: []

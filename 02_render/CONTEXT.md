@@ -37,6 +37,8 @@ Do NOT load: `../world/interview.md`; `../world/style.md` and
 
 ## Human check
 Put the image beside the spec and its selected frozen inputs, and walk the drift
-checklist line by line, **At risk** items first. Write `verdict: accepted` and
-flip `status: approved`, or write what drifted under **Drift notes**, write
-`verdict: drifted`, and start `01_spec` again.
+checklist line by line, **At risk** items first. The operator may accept or
+reject the render by editing the record or by clear chat approval naming it;
+after that approval, the agent records `verdict: accepted` and `status:
+approved`, or records `verdict: drifted` with the operator's drift notes and
+starts `01_spec` again.

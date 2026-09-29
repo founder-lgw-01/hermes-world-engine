@@ -40,5 +40,6 @@ material.
 ## Human check
 Read the spec top to bottom against the brief and the named bibles. Every
 invariant under **At risk** is guarded in **Prompt** in words, and nothing in
-**Prompt** contradicts a section above it. Edit in place. Flip
-`status: approved`.
+**Prompt** contradicts a section above it. Edit in place. The operator may
+approve it by editing the file or by clear chat approval naming the spec; after
+that approval, the agent records `status: approved` only.

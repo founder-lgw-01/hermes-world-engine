@@ -56,4 +56,31 @@ sources:
 
 ## Closing
 
-32. **Open answers confirmed:** Hermes’s relative height; prismatic-frost treatment; exact magical-vehicle form; observatory chart symbols without readable text; and the unresolved large-scale Crystal Citadel, Sky-Bridges and Passages, and Aether Falls and Islands concepts.
+32. **Open answers at initial setup:** Hermes’s relative height; prismatic-frost treatment; exact magical-vehicle form; observatory chart symbols without readable text; and the initially unresolved large-scale Crystal Citadel, Sky-Bridges and Passages, and Aether Falls and Islands concepts.
+
+## Location-resolution, 2026-09-29
+
+### Observatory Court
+
+33. **Architecture:** A circular marble court ringed by fluted columns and an antique-bronze armillary sphere.
+34. **Connection:** A broad ground-level stone causeway leads to Gateway Pavilion.
+35. **Celestial paving:** Abstract concentric rings, star points, and sun/moon reliefs only; no letters, numerals, or glyphs.
+
+### Crystal Citadel
+
+36. **Grounded replacement:** A monumental citadel carved into a grounded limestone mountain ridge, with stepped stone terraces and fluted gateway towers.
+37. **Active route light:** Warm-gold route light emerges only from carved stone gateways and caduceus-like relief channels.
+38. **Approach:** A weathered stone mountain road and broad carved limestone terraces.
+
+### Sky-Bridges and Passages
+
+39. **Grounded replacement:** A series of grounded limestone viaducts crossing ravines between mountain ridges and plazas.
+40. **Route light:** Warm-gold light appears only in shallow carved stone channels and gateway thresholds.
+41. **Connections:** The main viaduct runs from Gateway Pavilion toward Crystal Citadel.
+
+### Aether Falls and Islands
+
+42. **Grounded waterfall:** A ground-fed waterfall descends from the limestone ridge into a mossy stone basin below the temple.
+43. **Temple placement:** A Parthenon-style temple on a solid mossy stone promontory above the basin.
+44. **Light:** Dawn rose-gold mist with restrained warm-gold wayfinding light at the temple gateway.
+45. **Citadel/viaduct junction:** The main viaduct terminates at the Citadel’s lower limestone terrace, joining the weathered mountain road.

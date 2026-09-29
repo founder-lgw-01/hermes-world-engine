@@ -2,7 +2,7 @@
 world: hermetic-gates
 kind: environment-module
 stage: 00_setup
-status: draft
+status: approved
 generated: 2026-09-29
 scope: Owns world identity, era, and world-wide exclusions.
 depends_on: []

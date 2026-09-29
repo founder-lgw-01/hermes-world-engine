@@ -33,5 +33,7 @@ under `../runs/<set>/`, only the manifest is shared.
 
 ## Human check
 Open the new manifest line, follow it to the sidecar, and read the sidecar's
-prompt against the render record's **Prompt as sent**, word for word. Flip
-`status: approved`.
+prompt against the render record's **Prompt as sent**, word for word. The
+operator may approve it by editing the sidecar or by clear chat approval naming
+it; after that approval, the agent records `status: approved` on the sidecar
+only.

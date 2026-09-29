@@ -16,14 +16,16 @@ world, copy the empty folder again.
 3. First time only: put your reference images in `world/references/`, then go
    to `00_setup/` and read its `CONTEXT.md`. It interviews you before it writes
    anything. Read the modular world records and bibles it writes, correct them,
-   and flip each to `status: approved`.
+   then approve the named files in chat or change their status yourself. After
+   clear chat approval, the agent records `status: approved` for that scope.
 4. For a shot: copy `_templates/shot-brief.md` to `runs/<set>/<shot>/00-brief.md`
    and fill it in. `<set>` is a name you give a group of shots; `<shot>` is
    this shot's name.
 5. Go to `01_spec/`, then `02_render/`, then `03_file/`. Each stage's
    `CONTEXT.md` says what it reads, what it writes, and what you check.
-6. Read each output. Edit it. Flip `status: draft` to `status: approved`. The
-   next stage refuses to run until you do.
+6. Read each output. Edit it when needed, then approve that named output in chat
+   or change its status yourself. After clear chat approval, the agent records
+   `status: approved`. The next stage refuses to run until that happens.
 
 To add a character later, go to `00_setup/` again in character mode. The world
 stays as it is.

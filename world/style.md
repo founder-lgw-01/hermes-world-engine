@@ -1,7 +1,7 @@
 ---
 world: hermetic-gates
 stage: 00_setup
-status: draft
+status: approved
 generated: 2026-09-29
 sources:
   - world/interview.md
