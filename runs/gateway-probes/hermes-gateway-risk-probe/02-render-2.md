@@ -3,8 +3,8 @@ set: gateway-probes
 shot: hermes-gateway-risk-probe
 attempt: 2
 stage: 02_render
-status: draft
-verdict: ""
+status: approved
+verdict: accepted
 generated: 2026-09-29T12:58:09-07:00
 sources:
   - 01-spec-2.md

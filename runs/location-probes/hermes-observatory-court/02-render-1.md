@@ -3,8 +3,8 @@ set: location-probes
 shot: hermes-observatory-court
 attempt: 1
 stage: 02_render
-status: draft
-verdict: ""
+status: approved
+verdict: accepted
 generated: 2026-09-29T12:23:49-07:00
 sources:
   - 01-spec-1.md
