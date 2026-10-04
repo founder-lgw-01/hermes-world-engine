@@ -84,3 +84,35 @@ sources:
 43. **Temple placement:** A Parthenon-style temple on a solid mossy stone promontory above the basin.
 44. **Light:** Dawn rose-gold mist with restrained warm-gold wayfinding light at the temple gateway.
 45. **Citadel/viaduct junction:** The main viaduct terminates at the Citadel’s lower limestone terrace, joining the weathered mountain road.
+
+## Location-resolution, 2026-09-30
+
+### Archive Cloister
+
+46. **Form and connections:** Roofed, open-sided marble cloister around a quiet inner courtyard; a sheltered side passage connects to Gateway Pavilion and a rear path leads to Rooted Index Garden.
+47. **Local detail:** Deep stone niches hold oversized weathered bound volumes and physical parchment folders without readable labels; cracked pale limestone slabs darken toward the garden-facing edge.
+48. **Light and restriction:** Indirect late-afternoon or dusk light enters through the colonnade; only actively retrieved niches may emit restrained warm-gold light. The space remains private and contemplative, without a bright central portal or pristine library finish.
+
+### Processional Causeway
+
+49. **Form and connections:** Open-air broad, gently rising stone road from Gateway Pavilion, past Sunken Relay Forum, to Hall of Sealed Routes.
+50. **Local detail:** Low plinths, fluted route markers, vines, and shallow carved route channels sit in large cracked rectangular limestone paving, patched and worn by use.
+51. **Light and restriction:** Direct dawn or dusk light; route channels stay dormant stone and glow warm gold only while active. It is a credible grounded road, with no hovering bridges or floating terrain.
+
+### Hall of Sealed Routes
+
+52. **Form and connections:** Enclosed heavy Roman hall entered from Processional Causeway; interior side arches lead toward Archive Cloister and controlled access toward Sky-Bridges and Passages / the Citadel route.
+53. **Local detail:** Repeated rounded arches, bronze-sealed doors, stone thresholds, and recessed route channels over dark worn marble with shallow carved lines and moisture staining.
+54. **Light and restriction:** High clerestory openings provide low natural light; only active gateways emit warm gold. No text, glyphs, holographic maps, control panels, or sci-fi command-center treatment.
+
+### Rooted Index Garden
+
+55. **Form and connections:** Open-air terraced garden reached from Archive Cloister; lower terraces follow a natural path toward the mossy basin and landscape of Aether Falls and Islands.
+56. **Local detail:** Weathered limestone shelves, thick roots, branching trees, vines, and parchment/folder forms nested into stone alcoves; underfoot is mossy earth, exposed roots, cracked limestone steps, and occasional aged slabs.
+57. **Light and restriction:** Soft dawn through trees or quiet amber dusk; only actively discovered or retrieved records glow warm gold. The garden remains grounded, not neon, and contains no floating books or screens.
+
+### Sunken Relay Forum
+
+58. **Form and connections:** Open-air ground-level civic forum sunk below surrounding paving; broad steps descend from Processional Causeway, with lower arches toward Observatory Court and Hall of Sealed Routes.
+59. **Local detail:** Circular stepped seating, a central antique-bronze relay basin, weathered speaking platforms, broad perimeter arches, and concentric worn black-and-sepia stone rings with bronze drainage and relay channels.
+60. **Light and restriction:** Open-sky daylight or cinematic dusk; the basin glows restrained warm gold only during an active exchange or announcement. It is civic and functional rather than observatory-like, with no digital displays or readable inscriptions.

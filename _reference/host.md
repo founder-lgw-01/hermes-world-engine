@@ -12,7 +12,7 @@ file and nothing else.
 |---|---|
 | Host | Hermes agent |
 | Tool | `image.gen` |
-| Model | gpt image 2.5 sunburst (`openai/gpt-image-2.5-sunburst`) |
+| Model | gpt image 2.5 sunburst (`openai/gpt-image-2.5-sunburst`) via OpenRouter |
 | Prompt style | natural language; no parameter syntax, no weighting, no negative field |
 | Aspect ratio | passed as a tool parameter where the tool takes 1; otherwise stated in words at the end of the prompt |
 | Reference images | not passed to the tool; consistency comes from the prompt and the bibles |

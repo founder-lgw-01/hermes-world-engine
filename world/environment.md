@@ -25,6 +25,11 @@ sources:
 - `world/environment/locations/crystal-citadel.md` — unresolved; do not use before its excluded elements are replaced. [stated: interview q7, q9, q10]
 - `world/environment/locations/sky-bridges-and-passages.md` — unresolved; do not use before its excluded elements are replaced. [stated: interview q7, q9, q10]
 - `world/environment/locations/aether-falls-and-islands.md` — unresolved; do not use before floating-island geography is replaced. [stated: interview q7, q9, q10]
+- `world/environment/locations/archive-cloister.md` — draft roofed retrieval and handoff space beside Gateway Pavilion. [stated: operator-approved location details, 2026-09-30]
+- `world/environment/locations/processional-causeway.md` — draft open-air civic route from Gateway Pavilion to Hall of Sealed Routes. [stated: operator-approved location details, 2026-09-30]
+- `world/environment/locations/hall-of-sealed-routes.md` — draft enclosed controlled-threshold hall. [stated: operator-approved location details, 2026-09-30]
+- `world/environment/locations/rooted-index-garden.md` — draft open-air terrace of tended knowledge growth, linking Archive Cloister to Aether Falls. [stated: operator-approved location details, 2026-09-30]
+- `world/environment/locations/sunken-relay-forum.md` — draft open-air civic relay forum between the Causeway, Observatory Court, and Hall. [stated: operator-approved location details, 2026-09-30]
 
 ## Load for one shot
 1. Read this index, `world/style.md`, and only named character records.
