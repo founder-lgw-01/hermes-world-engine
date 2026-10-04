@@ -1,0 +1,78 @@
+# Motion rules, brief to motion spec
+
+The approved video brief defines the outcome. The accepted still establishes
+appearance. The spec translates both into a supported render request, not a
+new creative outcome invented by the spec writer.
+
+## Guided brief and feasibility
+
+Use `_templates/motion-brief.md`. Ask missing questions in small groups; explain
+choices without requiring the operator to know model terminology. Label proposed
+choices, source facts, and operator answers separately. Blank is unanswered.
+
+Before brief approval, inspect the chosen image, its approved sidecar, and the
+active host schema/configuration. Classify requests as supported, uncertain, or
+unsupported with evidence. Check visible head size, starting angle, road space,
+travel direction, occlusion, unseen-body invention, and input/settings support.
+Separate character/environment references require an exposed tool parameter;
+a description mentioning references is not proof that the active schema accepts
+them. Resolve unsupported settings and creative conflicts with the operator.
+Supported input does not guarantee successful motion.
+
+Existing-still mode never reopens acceptance or generates replacements. New-scene
+mode starts with the video brief, then links a still brief into `01_spec`; follow
+that stage's contract and approvals through rendering and filing, then return.
+No motion spec/render proceeds without an accepted, approved, filed source.
+An approved concept brief may await that source; rerun feasibility when it arrives
+and obtain renewed brief approval if the intended action or delivery changes.
+
+## Spec sections, in order
+
+0. **Source manifest.** Approved brief and sidecar paths, source image SHA-256,
+   selected approved world-record paths/hashes where needed, inherited deviations.
+1. **Brief and feasibility.** Outcome and every brief field; resolved decisions,
+   supported input/settings, uncertainties, and exact configured provider/model.
+2. **What moves and sequence.** Primary travel, head/gaze, expression and props;
+   beginning, main action, ending; then secondary motion. Define relative image
+   directions and motion priorities. Do not add an unbriefed action.
+3. **What holds.** Identity/design, wardrobe, world and medium; explicitly separate
+   allowed changes in pose, gaze, expression and position from these invariants.
+4. **Camera and delivery.** Locked off or one move; supported duration, aspect,
+   resolution, audio and upscale. No silent extra processing.
+5. **At risk and success checks.** Guards for threatened invariants plus an
+   observable review criterion for every requested primary action and ending.
+6. **Prompt.** Derived only from the preceding sections; sent unchanged after
+   spec/render approval. Tool settings remain separate from prompt prose.
+
+## Prompt discipline
+
+Name the primary action positively and prominently, with beginning, main action,
+and ending. One coherent shot; keep secondary motion subordinate. A locked camera
+can isolate character-motion tests but is a choice, not a default.
+
+Preserve identity and visual design, not a frozen pose. Never combine a requested
+head turn with 'gaze never changes' or freeze all face pixels while asking for a
+new view. Say facial structure, hair and helmet design remain consistent while
+the approved head/gaze motion occurs. Do not demand 'everything identical' when
+movement is the outcome. Hold accepted colour/style deviations as-is; do not
+invent freckles or iris detail absent at source scale.
+
+Inherit the source medium, lighting and palette; guard against 3D/realism drift
+without suppressing intended motion. Reference the image as 'the supplied
+reference image', never its path. Ending follows the brief: continuous travel
+must not acquire an automatic settle. Camera, continuity and exclusions follow
+the approved brief rather than a universal prohibition on scene changes.
+
+## Review, variations and filing
+
+Review visual consistency and motion success separately using the temporal
+checklist. A consistent near-static clip may miss a walking criterion. Give
+actual timestamps or measured frame indices, and disclose sampled-review limits.
+The operator owns acceptance; do not relabel an accepted source/video as rejected.
+
+Rejected attempt: derive the next numbered spec from drift notes and an approved
+revised brief where intent changes. Preserve prior versions. Accepted-video
+variation: use a new shot folder linked to the accepted predecessor; begin with a
+new draft brief. Never rewrite an approved spec or brief to absorb new intent.
+After video acceptance, file a relative-path row into `runs/motion/<set>/manifest.md`
+using `_templates/motion-manifest.md`. Filing is local retention, not publishing.

@@ -23,9 +23,13 @@ you are working in. Load what that contract names and nothing more.
 | What a bible must contain | `_reference/bible-schema.md` |
 | The questions setup asks | `_reference/setup-interview.md` |
 | How a spec and its prompt are built | `_reference/spec-rules.md` |
+| Brief a video, using an accepted still or planning a new scene | copy `_templates/motion-brief.md` to `runs/motion/<set>/<shot>/00-brief.md`, then `04_animate/CONTEXT.md` |
+| How a motion spec and its prompt are built | `_reference/motion-rules.md` |
+| What drift looks like in motion | `_reference/drift-checklist.md`, the temporal tables |
 | What drift looks like, what a shot puts at risk | `_reference/drift-checklist.md` |
 | The image tool this folder expects | `_reference/host.md` |
 | Finished shots | `runs/<set>/`, 1 manifest per set |
+| Accepted videos | `runs/motion/<set>/manifest.md` |
 
 ## Never
 
@@ -50,3 +54,5 @@ you are working in. Load what that contract names and nothing more.
 - Skip a setup question, or ask them all at once.
 - Hold 2 worlds in this folder. A second world is a second copy.
 - Declare an API key, endpoint, or client. The host provides the image tool.
+- Animate an image that is not filed with `verdict: accepted`, or ask the video model to repair a still that already drifted.
+- Send a local path to native `video_generate.image_url`, publish a still without approval, or resubmit a video whose outcome is unknown.

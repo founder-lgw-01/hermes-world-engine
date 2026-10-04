@@ -31,6 +31,50 @@ reader knows it was asked for.
 6. `file`: the image filename and type
 7. `generated`: the timestamp
 
+## The video tool
+
+`04_animate` needs a second capability from the host: a video generation tool
+that takes a text prompt plus one still image and returns a video file. Same
+rule — nothing here declares a key, an endpoint, or a client.
+
+### As shipped, video
+
+| | |
+|---|---|
+| Host | Hermes agent |
+| Tool | native Hermes `video_generate` |
+| Router | active local Hermes profile configured with `video_gen.provider: nous`; generation runs remotely through the Nous route, not on local hardware |
+| Model pin | `video_gen.model: bytedance/seedance-2.5` |
+| Verified backend | returned provider `fal`, model `seedance-2.5`, image-to-video route; record actual returned metadata rather than assuming it matches the configured router |
+| Prompt style | natural language; approved spec prompt sent unchanged |
+| Still input | public HTTPS URL passed directly as `image_url`; no import, widget, or `media_id` |
+| Duration, resolution, aspect ratio | inspect the active tool schema before approval/submission; verified Seedance settings: 5 seconds, 16:9, 720p; active schema supports 480p/720p, not 1080p |
+| Audio and upscale | set explicitly; verified shot uses `audio: false`, `upscale: false`; do not add paid processing silently |
+| Completion | blocking tool call returns a video URL or local path; save and inspect it, with no Higgsfield polling |
+
+### Preflight and image handoff
+
+Read `hermes config get video_gen` and the current `video_generate` schema.
+The model is host configuration, not a generation-call argument. Change it only
+with operator approval using `hermes config set`; do not declare credentials or
+clients here. Official reference:
+https://hermes-agent.nousresearch.com/docs/developer-guide/video-gen-provider-plugin
+
+For a local still, obtain approval before public hosting. A separate public
+GitHub asset repository can provide a raw PNG URL without GitHub Pages or any
+change to the private world repository. Fetch the public URL without credentials
+and verify identical SHA-256 before passing it as `image_url`. Record its exact
+URL and publication handle. Public Git history and caches can retain copies;
+cleanup or visibility changes need their own scope.
+
+The configured Nous router is local configuration; inference is remote.
+Record both configured and returned routes. Measure returned duration,
+dimensions, codec, frame rate, and audio streams instead of trusting a missing
+or empty aspect-ratio field. If an approved setting is unsupported, report the
+limitation; do not claim 1080p or add an upscale charge. A transport timeout
+leaves submission outcome unknown: reconcile any returned handle before retrying.
+Separate billable probes require approval.
+
 ## Changing host
 
 Replace the table under **As shipped**. If the new tool takes parameters

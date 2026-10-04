@@ -1,7 +1,11 @@
 # Character World Engine, the line
 
 The flow in 1 line: a world is set up once → a shot brief → a spec → a render
-and a drift check → the image filed into its set.
+and a drift check → the image filed into its set → optional approved motion
+spec → native Hermes video render and temporal drift check → accepted video filing.
+A video-first request starts with a draft video brief and feasibility check in
+`04_animate`; a new-scene brief guides the still pipeline before returning to
+motion. Existing-image briefs reuse accepted stills without new rendering.
 
 | Stage | Job | Input | Output | Human check |
 |---|---|---|---|---|
@@ -9,10 +13,12 @@ and a drift check → the image filed into its set.
 | `01_spec` | brief to frozen world-input manifest, spec, and prompt | `runs/<set>/<shot>/00-brief.md` | `runs/<set>/<shot>/01-spec-N.md` | every risk is guarded in the prompt |
 | `02_render` | verify frozen inputs, send prompt, save image, check drift | approved spec and manifest | `runs/<set>/<shot>/02-image-N.<ext>`, `runs/<set>/<shot>/02-render-N.md` | walk the drift checklist; write the verdict |
 | `03_file` | file the accepted image into its set | the record with `verdict: accepted` | `runs/<set>/<shot>/03-sidecar.md`, 1 line in `runs/<set>/manifest.md` | read the sidecar's prompt against the record |
+| `04_animate` | brief, assess feasibility, specify, render, review, file motion | approved video brief and source sidecar before spec/render | `runs/motion/<set>/<shot>/00-brief.md`, `01-spec-N.md`, `04-video-N.<ext>`, `04-render-N.md`; accepted rows in `runs/motion/<set>/manifest.md` | approve brief, then spec/render; judge consistency and motion success, then accept |
 
 Each stage's contract is the `CONTEXT.md` in its folder. A `verdict: drifted`
 sends the shot back to `01_spec`, which writes attempt N+1 from the drift
-notes. Every attempt keeps its files.
+notes. Motion drift stays in `04_animate`, which writes the next numbered
+`01-spec-N.md` under `runs/motion/`. Every attempt keeps its files.
 
 Factory (stable, every run): `_reference/`, `_templates/`, and `world/` once approved
 Product (new each run): `runs/<set>/<shot>/`, numbered by the stage that wrote each file

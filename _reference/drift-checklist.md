@@ -74,7 +74,57 @@ Walk the character's bible top to bottom:
 | an expression at the edge of range | face, and out-of-character read | name the expression and what it is not |
 | a new location, first time shot | palette, materials, light | copy the location block into the scene section |
 
+## The temporal findings
+
+A video is checked by walking the whole shot twice: the first frame against the
+bibles, then the last frame against the first. A thing that is correct in
+frame 1 and wrong in frame 240 is drifted, and the finding names the frames.
+
+Each line of a motion check gets 1 of 3 findings, using the same words:
+
+- `holds`: the invariant reads the same in the first and last frame.
+- `drifted: <what moved, and between which frames>`: name it in the bible's
+  words and give the frames, e.g. "drifted: jaw rounds and the freckles are
+  gone by frame 90; bible says square jaw, freckles across the nose bridge."
+- `cannot see: <why>`: the shot hides it. Not a pass and not a fail.
+
+## The temporal risk table, motion to invariants at risk
+
+`04_animate` reads this to write **At risk**.
+
+| The motion has | At risk | Guard in the prompt |
+|---|---|---|
+| a character walking or running | face, proportions, limb length, gait | state build and the face lines; say the stride is steady and the stride's length does not change across the shot |
+| a trailing garment, cloak, chlamys, or hair in motion | wardrobe design, hair outline | preserve colour/material/trim while cloth follows the action; settle only if the brief requires it |
+| a camera push or dolly | palette, light direction, medium, scale | say the light and medium do not change as the camera moves; state that the frame ends on the same style, not a rendered 3D look |
+| a camera move at all | aspect ratio, framing horizon | say the frame stays 16:9 and the horizon does not tilt |
+| vegetation, dust, or water in motion | materials, palette | name the material and say it moves within the shared palette only |
+| route light, gold channels, or caduceus glow | gold as the sole active-routing rule | say gold stays confined to the few active channels and does not spread or change color |
+| a long duration, 10s or more | identity, wardrobe, world consistency | preserve visual design while allowing all approved motion and pose changes |
+| a head turn, gaze shift, or expression change | facial structure, helmet, expression range | state starting direction, turn target, ending direction; preserve identity, not fixed facial pixels |
+| a dissolve, cut, or scene change inside the shot | the whole world | forbid it: the video is one continuous shot and does not cut or dissolve |
+
+## Motion success review
+
+Review separately from visual consistency. For every success check in the brief,
+report `holds`, `drifted`, or `cannot see` with actual timestamps or measured
+frame indices. Include primary travel, visible head/gaze action, camera, and
+ending where requested. Correct style with missing action is not a verified
+success. Do not count cloth flutter as walking or camera drift as head motion.
+Inspect first and last frames and action beats; disclose sparse-sample limits.
+Approved pose/expression changes are not identity drift. Never invent frame
+numbers or make a full-clip claim from a contact sheet.
+
 ## The verdict
+
+A motion verdict covers both visual consistency and motion success.
+- `verdict: accepted`: every **At risk** line holds or the operator accepts its
+  `cannot see`; no `drifted` on a character; drift on the world is named and
+  accepted in **Drift notes**.
+- `verdict: drifted`: at least 1 line the operator will not accept. **Drift
+  notes** says which, and between which frames, so `04_animate` can guard it.
+
+### And the still verdict
 
 The operator writes exactly 1 of:
 
