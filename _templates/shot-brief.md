@@ -2,16 +2,17 @@
 set:
 shot:
 stage: brief
-status: approved
+status: draft
 generated:
 sources: operator
 ---
 
 # <shot>, brief
 
-Copy this file to `runs/<set>/<shot>/00-brief.md`. Fill what you know. Leave
-a field empty and `01_spec` asks you before it writes. Write `you choose` and
-the spec chooses and marks it so you see the choice.
+Copy this file to `runs/<set>/<shot>/00-brief.md`. Fill what you know. A blank
+required field means unanswered; Hermes asks before deriving a spec. `you choose`
+delegates a choice that is surfaced in the completed brief for human approval.
+The copied template is not approved, and approval does not authorize a render.
 
 ## Characters in frame
 Name each, from `world/characters/`:
@@ -41,3 +42,17 @@ From `world/environment.md`'s location menu:
 
 ## Anything else the image must show or must not show
 -
+
+## Success checks
+- Observable evidence that this image meets its intended purpose:
+
+## Studio handoff
+Write none for a standalone image; do not create an intake just to fill this.
+- Approved intake and selected planning versions, with authoritative paths:
+- Storyboard shot/event IDs and continuity state IDs when narrative:
+- Approved spatial/reference inputs and any completed preparation:
+- Early composition brief link for framing/safe areas, or none:
+- Receiving producer, expected output and revision-impact notes:
+
+Only declared approved inputs enter the spec. No missing asset, new world fact
+or early finishing requirement is implicit permission for generation.

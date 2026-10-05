@@ -15,6 +15,9 @@ you are working in. Load what that contract names and nothing more.
 
 | Task | Go to |
 |---|---|
+| Start a studio request or choose the deliverable | `studio/CONTEXT.md`, then its selected contract |
+| Narrative foundation, sequence, maps/coverage and continuity | `studio/CONTEXT.md`; reuse approved assets and select only necessary work |
+| Finish accepted animation with voice, sound, text and assembly | `05_compose/CONTEXT.md`; execution requires a separately authorized route |
 | Set up a world, or add a character | `00_setup/CONTEXT.md` |
 | Make a shot | copy `_templates/shot-brief.md` to `runs/<set>/<shot>/00-brief.md`, then `01_spec/CONTEXT.md` |
 | A character's invariants | `world/characters/`, 1 file each |
@@ -30,10 +33,12 @@ you are working in. Load what that contract names and nothing more.
 | The image tool this folder expects | `_reference/host.md` |
 | Finished shots | `runs/<set>/`, 1 manifest per set |
 | Accepted videos | `runs/motion/<set>/manifest.md` |
+| Studio output homes, approvals, handoffs and revisions | `_reference/studio-rules.md` |
 
 ## Never
 
-- Run a stage whose upstream output is not `status: approved`.
+- Derive or execute a stage output whose required declared inputs are not
+  `status: approved`; route dependencies, not folder adjacency, define upstream.
 - Load anything a stage's `Do NOT load:` line names. The exclusion is the
   contract, not a suggestion.
 - Load the full workspace to answer 1 question. Read the contract, its named
@@ -56,3 +61,5 @@ you are working in. Load what that contract names and nothing more.
 - Declare an API key, endpoint, or client. The host provides the image tool.
 - Animate an image that is not filed with `verdict: accepted`, or ask the video model to repair a still that already drifted.
 - Send a local path to native `video_generate.image_url`, publish a still without approval, or resubmit a video whose outcome is unknown.
+- Treat scope approval as approval of future outputs, bake finishing into studio
+  animation, or claim an unimplemented composition adapter is working.

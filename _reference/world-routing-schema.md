@@ -6,13 +6,13 @@ available locations but does not repeat their creative facts.
 
 ## Record metadata
 
-Every setup-owned environment index, module, location, and reference-permission
+Every setup-owned environment index, module, location, map, and reference-permission
 record begins with:
 
 ```yaml
 ---
 world: <world-slug>
-kind: environment-index | environment-module | environment-location | reference-permissions
+kind: environment-index | environment-module | environment-location | environment-map | reference-permissions
 stage: 00_setup
 status: draft
 generated:
@@ -38,6 +38,14 @@ For a shot, read the environment index, style record, named character records,
 and only the environment modules and locations required by visible content. Load
 the explicit dependency closure of those selected records. Global invariants
 outrank local detail; reference permissions never outrank an approved bible.
+
+Spatial maps use `world/environment/maps/<map>-N.md`, `kind: environment-map`,
+and the spatial-map template through `00_setup`. They identify owned facts versus
+facts derived from existing owners; new geometry requires setup approval.
+Select a new approved map/location by explicit path when it is not listed in
+the index. Do not edit an approved index or other record in place for discovery;
+index changes require their own setup revision. A map's world dependencies must
+not include a downstream storyboard or shot. See `_reference/spatial-rules.md`.
 
 ## Reference companions
 

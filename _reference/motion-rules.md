@@ -30,6 +30,9 @@ and obtain renewed brief approval if the intended action or delivery changes.
 
 0. **Source manifest.** Approved brief and sidecar paths, source image SHA-256,
    selected approved world-record paths/hashes where needed, inherited deviations.
+   Freeze any **Studio handoff** intake/sequence/storyboard/continuity versions
+   and selected maps with SHA-256 values after approval. Recheck those exact
+   versions before rendering; state IDs reference continuity, not a second canon.
 1. **Brief and feasibility.** Outcome and every brief field; resolved decisions,
    supported input/settings, uncertainties, and exact configured provider/model.
 2. **What moves and sequence.** Primary travel, head/gaze, expression and props;
@@ -76,3 +79,9 @@ variation: use a new shot folder linked to the accepted predecessor; begin with 
 new draft brief. Never rewrite an approved spec or brief to absorb new intent.
 After video acceptance, file a relative-path row into `runs/motion/<set>/manifest.md`
 using `_templates/motion-manifest.md`. Filing is local retention, not publishing.
+
+For studio-linked work, finishing requirements may inform timing and framing;
+voice, sound and accurate on-screen text are not baked into generated animation.
+Accepted clips return to the sequence review when narrative, then composition
+only when selected. Neither an individual clip's acceptance nor planned start/end
+states prove actual adjacent-shot continuity.

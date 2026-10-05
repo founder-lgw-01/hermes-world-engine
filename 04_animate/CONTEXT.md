@@ -18,6 +18,9 @@ image.
 - Working (rerun): the rejected `../runs/motion/<set>/<shot>/04-render-N.md`.
 - Working (variation): the explicitly named accepted predecessor; preserve it.
 - Working (filing): `../runs/motion/<set>/manifest.md`, when it exists.
+- Working (studio-linked only): exact approved planning versions and state IDs
+  named in the brief's Studio handoff; selected maps, not other shots' prompts.
+  Apply `../_reference/studio-rules.md` for that named handoff only.
 - Reference (selected only): approved character/location records required to
   evaluate allowed motion, plus their explicit dependency closure.
 - Reference (every run): `../_templates/motion-brief.md`,
@@ -56,6 +59,9 @@ upstream contracts are not loaded for an existing-image run.
 4. Stop for explicit approval of `01-spec-N.md` before rendering. Verify the
    accepted source hash, the approved sidecar, and the active native video
    provider/model and supported parameters using `../_reference/host.md`.
+   Recheck every selected planning input's approval and recorded SHA-256 from
+   the Source manifest. A changed input returns to its owner for bounded revision;
+   neither a sequence approval nor an old spec authorizes a new version.
 5. Obtain a public HTTPS URL for that exact still. Prefer an existing authorized
    URL; publishing a local image requires explicit approval. Fetch the URL
    without authentication and verify its SHA-256 against the source. No
@@ -83,6 +89,9 @@ upstream contracts are not loaded for an existing-image run.
    Append one row per accepted attempt with relative source/spec/video/record
    paths, video hash, and actual approval evidence. Avoid duplicate rows. The
    record remains authoritative; manifest filing does not publish the video.
+   A studio sequence returns accepted clips to `../studio/02_sequence/CONTEXT.md`
+   for actual continuity reconciliation. A standalone single shot stops here;
+   `../05_compose/CONTEXT.md` is selected only when finishing was requested.
 
 ## Outputs
 - `../runs/motion/<set>/<shot>/00-brief.md`, initially `status: draft`;

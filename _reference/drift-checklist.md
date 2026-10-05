@@ -133,3 +133,24 @@ The operator writes exactly 1 of:
   named and accepted in **Drift notes**.
 - `verdict: drifted`: at least 1 line the operator will not accept. **Drift
   notes** says which, in the bible's words, so `01_spec` can guard it.
+
+## Sequence and composition review
+
+Sequence review checks actual accepted clips against the approved storyboard
+and continuity baseline. Do not repeat or revoke the individual clip verdicts.
+
+| Selected work | Required evidence | Failure or hold |
+|---|---|---|
+| Adjacent shots | Observed end/start states, exact clip versions and timestamps | Missing/extra characters, changed positions/counts/props/power without an approved transition |
+| Spatial continuity | Selected map version, landmarks, camera-space and route evidence | Unapproved geography or incompatible views |
+| Story events | Each approved event visibly accomplished in the selected order | Beautiful clips that omit or change the intended event |
+| Assembly and pacing | Actual final timeline, source in/out and approved transitions | A trim, reorder or transition changes approved intent |
+| Final visual identity | Existing identity/style checks on the actual export | Finishing alters approved character/world identity or hides a known failure |
+| Requested voice/sound | Actual listening/inspection and approved script/source/timing evidence | Wrong words/timing, missing layer, unreviewed audio or unapproved source |
+| Requested titles/captions | Exact approved text, timing, legibility and safe area in the export | Incorrect, unreadable or misplaced text |
+| Final delivery | Actual file properties and each approved delivery criterion | A spec or filename presented as proof of an export |
+
+Use the existing visual findings for visual checks. For audio, retain actual
+observations or `not reviewed`; unreviewed is not a pass. Record inspection limits
+and refer required unresolved evidence to the human. Final acceptance is a
+separate verdict on the actual finished piece, never inherited from its clips.

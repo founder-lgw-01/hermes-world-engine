@@ -11,6 +11,10 @@ written first, with a spec fitted around it, is a defect.
 project-relative path, any selected reference role, and its SHA-256 hash. The
 manifest records inputs; it does not paste whole modules or select every cited
 image.
+Include the approved brief and any selected **Studio handoff** planning records
+in this same manifest with their SHA-256 values after approval metadata. They
+are planning inputs, not world canon. The render checks the frozen versions of
+both world and planning inputs; do not add a parallel approval tracker.
 
 **1. Brief.** Every field of `00-brief.md`, filled. Where the operator left a
 field empty, the question asked and the answer given, in the operator's words.
@@ -66,7 +70,9 @@ Rules:
   ("a head shorter than"), and say where each stands.
 - Exclusions are written as what the image holds or does not hold, in a
   sentence: "the image contains no lettering, no watermark, no border."
-- No text inside the image unless the brief asks for it and says the words.
+- No text inside a standalone image unless the brief asks for it and says the
+  words. For studio animation references, finishing text stays in composition;
+  plan safe areas without baking titles/captions into the generated still.
 - Aspect ratio is passed the way `host.md` says; if the tool takes it only in
   the prompt, say it in words at the end.
 - 1 paragraph for a simple shot, up to 3 for a crowded one. Past that, the

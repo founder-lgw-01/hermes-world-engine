@@ -69,3 +69,16 @@ consistency. Do not require facial detail the framing cannot reveal.
 - Unsupported requests and alternatives:
 - Operator decisions needed:
 Resolve blockers and obtain brief approval before deriving the motion spec.
+
+## Studio handoff
+Write none for a standalone shot; existing-image work needs no new studio packet.
+- Approved intake and selected sequence/storyboard/continuity versions:
+- Shot/event IDs and expected start/end state IDs:
+- Selected approved map/reference paths and completed preparation:
+- Early composition brief link for pacing/framing, or none:
+- Receiving producer, expected output and revision-impact notes:
+
+For studio work, selected voice/sound/text is added in composition after accepted
+animation, not baked into the generated clip. Every linked planning input must
+be approved and frozen in the motion spec's Source manifest. Existing-image mode
+never implies replacement generation or reopening its acceptance.
