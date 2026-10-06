@@ -26,10 +26,49 @@ No motion spec/render proceeds without an accepted, approved, filed source.
 An approved concept brief may await that source; rerun feasibility when it arrives
 and obtain renewed brief approval if the intended action or delivery changes.
 
+## Decoded-frame sources
+
+Use this named mode inside `04_animate` to continue an accepted clip from one
+of its actual frames. It produces no replacement artwork and no image-generation receipt.
+Do not route a decoded frame through `01_spec`/`02_render` or invent their outputs.
+
+1. Select the exact predecessor video, predecessor render record and
+   predecessor manifest row. Require the render record to say `status: approved`
+   and `verdict: accepted`; match the actual video SHA-256 to both record and row.
+   Preserve the predecessor and its acceptance. Missing or mismatched evidence
+   blocks extraction for use as an accepted continuation source.
+2. Measure the source, record the zero-based decoded frame index and timestamp,
+   and perform decode-only extraction. Inspect the actual PNG and nearby motion
+   samples. Record its dimensions, format, frame SHA-256 and exact derivation.
+   A crop, repaint, interpolation or other alteration is not this mode. Keep
+   one home per PNG; later versions use new filenames, never overwrite an
+   accepted frame. A matching image does not prove a continuous gait.
+3. Copy `_templates/motion-source.md` to
+   `runs/motion/<set>/<shot>/00-source-N.md`. This source record is the derived
+   frame's sidecar and filing home, not a second approval tracker. Record real
+   source-frame acceptance evidence without inventing a prompt, job or charge.
+   Present the exact image and completed sidecar for explicit approval; only
+   then record `status: approved` and `verdict: accepted` metadata. Approval of
+   the predecessor or a brief alone does not approve this new source record.
+4. Before motion-spec derivation, require the brief and sidecar approved and
+   the sidecar's verdict accepted. Recheck the predecessor record/manifest and
+   actual hashes. Freeze the source record, PNG, predecessor video, predecessor
+   render record and predecessor manifest in the spec after approval metadata
+   is recorded. The manifest supplies filing evidence; its render record owns
+   acceptance. Missing evidence, an unapproved input or a changed hash halts use.
+5. The approved sidecar files this derived source; no generated-still manifest
+   row is needed. After the new video is accepted, its normal motion-manifest
+   row names this record in the existing **Source sidecar** column. Keep the
+   normal generated-still filing path unchanged. Separate public hosting and
+   spec/render approvals still apply; never infer them from source acceptance.
+
 ## Spec sections, in order
 
-0. **Source manifest.** Approved brief and sidecar paths, source image SHA-256,
+0. **Source manifest.** Approved brief and source sidecar or decoded-frame source record,
+   source image SHA-256,
    selected approved world-record paths/hashes where needed, inherited deviations.
+   For a decoded frame, also freeze the selected predecessor evidence above;
+   the original still's sidecar cannot authorize the extracted frame's pixels.
    Freeze any **Studio handoff** intake/sequence/storyboard/continuity versions
    and selected maps with SHA-256 values after approval. Recheck those exact
    versions before rendering; state IDs reference continuity, not a second canon.

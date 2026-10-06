@@ -12,9 +12,13 @@ image.
 ## Inputs
 - Working (this run): `../runs/motion/<set>/<shot>/00-brief.md`, initially draft;
   an existing accepted still or a new-scene concept awaiting a still.
-- Working (before spec/render): the `../runs/<set>/<shot>/03-sidecar.md` that names the
+- Working (generated-still mode, before spec/render): the `../runs/<set>/<shot>/03-sidecar.md` that names the
   accepted image, and the `../runs/<set>/manifest.md` line pointing at it
   (requires `status: approved`)
+- Working (decoded-frame mode, before spec/render):
+  `../runs/motion/<set>/<shot>/00-source-N.md`, a `kind: decoded-frame-sidecar`
+  with `status: approved` and `verdict: accepted`. It names the exact PNG,
+  accepted predecessor video/render record and its accepted motion-manifest row.
 - Working (rerun): the rejected `../runs/motion/<set>/<shot>/04-render-N.md`.
 - Working (variation): the explicitly named accepted predecessor; preserve it.
 - Working (filing): `../runs/motion/<set>/manifest.md`, when it exists.
@@ -23,6 +27,7 @@ image.
   Apply `../_reference/studio-rules.md` for that named handoff only.
 - Reference (selected only): approved character/location records required to
   evaluate allowed motion, plus their explicit dependency closure.
+- Reference (decoded-frame mode only): `../_templates/motion-source.md`.
 - Reference (every run): `../_templates/motion-brief.md`,
   `../_templates/motion-record.md`, `../_templates/motion-manifest.md`,
   `../_reference/motion-rules.md` for the brief interview and motion spec,
@@ -50,9 +55,16 @@ upstream contracts are not loaded for an existing-image run.
    hand off to the existing still pipeline with separate approvals, then return
    after filing. Load upstream stage contracts only at that handoff. Existing-
    image mode never authorizes new images. Recheck feasibility on the final still.
-3. Before writing a motion spec, require `00-brief.md` and the source sidecar to
-   say `status: approved`, and its render record to say `status: approved` and
-   `verdict: accepted`. Derive `01-spec-N.md` using `motion-rules.md` in order,
+   Decoded-frame mode instead follows **Decoded-frame sources** in motion-rules:
+   verify the accepted predecessor, extract the selected frame and prepare its
+   source sidecar for approval. It needs no image generation or `03_file` run.
+3. Before writing a motion spec, require `00-brief.md` to say `status: approved`.
+   Generated-still mode also requires the source sidecar to say `status: approved`
+   and the source render record to say `status: approved` and `verdict: accepted`.
+   Decoded-frame mode requires those same approval/verdict values on the new
+   source sidecar and predecessor render record, plus verified frame/video
+   hashes and predecessor filing evidence. Frame acceptance never transfers
+   to different pixels. Derive `01-spec-N.md` using `motion-rules.md` in order,
    prompt last. Preserve identity/design while allowing briefed head, gaze,
    expression and position changes. An accepted-video variation gets a new shot
    folder; rejection revisions retain numbered attempts and source history.
@@ -96,6 +108,10 @@ upstream contracts are not loaded for an existing-image run.
 ## Outputs
 - `../runs/motion/<set>/<shot>/00-brief.md`, initially `status: draft`;
   feasibility is retained in the brief, not a parallel tracker.
+- Decoded-frame mode only: the actual `00-source-frame.png` (or a new, explicitly
+  named version without overwriting it) and
+  `../runs/motion/<set>/<shot>/00-source-N.md` from motion-source.md. The source
+  sidecar is the frame's filing home; draft until reviewed, with verdict empty.
 - `../runs/motion/<set>/manifest.md`, accepted attempts only.
 - `../runs/motion/<set>/<shot>/01-spec-N.md`, frontmatter: `set`, `shot`,
   `attempt`, `stage: 04_animate`, `status: draft`, `generated`, `sources`

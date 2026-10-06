@@ -18,10 +18,14 @@ delegates a choice that must be surfaced before approval.
 What happens, and what should the viewer understand or feel?
 
 ## Reference and entry mode
-- Mode: existing accepted still / new scene needing a reference.
+- Mode: existing accepted still / decoded-frame continuation / new scene needing a reference.
 - Source set and shot:
 - Approved sidecar:
 - New-scene handoff, if needed: linked still brief/spec; no implicit replacement.
+- Decoded-frame mode only: accepted predecessor video/render/manifest, selected
+  frame index/timestamp, PNG/hash and `00-source-N.md` from motion-source.md.
+  Follow the decoded-frame source rules; no replacement generation or implicit
+  approval of a new frame, public upload or render.
 
 ## Starting state
 Character position, pose, head direction, gaze, expression, route space,
