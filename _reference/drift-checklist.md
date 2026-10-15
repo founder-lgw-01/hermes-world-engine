@@ -100,7 +100,7 @@ Each line of a motion check gets 1 of 3 findings, using the same words:
 
 | The motion has | At risk | Guard in the prompt |
 |---|---|---|
-| a character walking or running | face, proportions, limb length, gait, paired footwear/wing symmetry, end-of-clip deceleration | state build, face lines, and left/right footwear symmetry; specify an explicit step cadence (e.g., ~2 steps/second) and say the stride pace does not slow down in the final second |
+| a character walking or running | face, proportions, limb length, gait, paired footwear/wing symmetry, end-of-clip deceleration | state build, face lines, and left/right footwear symmetry; include anti-inversion guards (no inverted wings, no flipped anatomy, no mirrored limbs, no wrong-side wing placement when legs cross); specify an explicit step cadence (e.g., ~2 steps/second) and say the stride pace does not slow down in the final second |
 | a trailing garment, cloak, chlamys, or hair in motion | wardrobe design, hair outline | preserve colour/material/trim while cloth follows the action; settle only if the brief requires it |
 | a camera push or dolly | palette, light direction, medium, scale | say the light and medium do not change as the camera moves; state that the frame ends on the same style, not a rendered 3D look |
 | a camera move at all | aspect ratio, framing horizon | say the frame stays 16:9 and the horizon does not tilt |

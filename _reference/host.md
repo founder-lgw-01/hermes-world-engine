@@ -15,7 +15,7 @@ file and nothing else.
 | Model | gpt image 2.5 sunburst (`openai/gpt-image-2.5-sunburst`) via OpenRouter |
 | Prompt style | natural language; no parameter syntax, no weighting, no negative field |
 | Aspect ratio | passed as a tool parameter where the tool takes 1; otherwise stated in words at the end of the prompt |
-| Reference images | pass up to 3 selected `world/references/` images from the spec's **World-input manifest** (`reference_image_urls` on native `image_generate`, or `medias` with role `image_references` on the Higgsfield fallback); consistency comes from both the selected reference sheets and the prompt/bibles |
+| Reference images | pass up to 3 selected `world/references/` images from the spec's **World-input manifest** (`reference_image_urls` on native `image_generate`, or `medias` with role `image_references` on the Higgsfield fallback); when a selected sheet contains multiple views/panels (`4-view` or `5-angle`), crop and pass only the single panel matching the shot's camera angle so the generator does not blend opposing front/rear/side views; consistency comes from both the selected reference crops and the prompt/bibles |
 
 ## What the render record captures
 

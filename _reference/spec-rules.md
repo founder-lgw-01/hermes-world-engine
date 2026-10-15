@@ -73,6 +73,16 @@ Rules:
 - No text inside a standalone image unless the brief asks for it and says the
   words. For studio animation references, finishing text stays in composition;
   plan safe areas without baking titles/captions into the generated still.
+- For animated routes, keep carved stone curb gutters dormant/unlit at still
+  origination unless a static threshold glow is the subject of a standalone
+  still; prompt active liquid-gold energy pulses at `04_animate` (or apply them
+  deterministically in `05_compose`) so the still generator does not paint a
+  meandering gold river down the middle of the roadbed.
+- When conditioning on multi-view turnaround sheets (`world/references/`), crop
+  and pass the single orthographic panel matching the shot's camera orientation
+  (e.g., front panel for a front shot) rather than feeding all 4 panels at once,
+  and state paired footwear/wing placement in screen-space depth and outward
+  silhouette direction rather than ambiguous diagonal left/right labels.
 - Aspect ratio is passed the way `host.md` says; if the tool takes it only in
   the prompt, say it in words at the end.
 - 1 paragraph for a simple shot, up to 3 for a crowded one. Past that, the
