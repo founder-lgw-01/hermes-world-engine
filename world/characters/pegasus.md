@@ -8,6 +8,7 @@ sources:
   - world/interview.md
   - world/references/pegasus-flight.md
   - world/references/pegasus-body-turnaround.md
+  - world/references/pegasus-tack-sheet.md
 ---
 
 # pegasus, character bible
@@ -67,7 +68,8 @@ Default outfit, garment by garment, color and material:
   - Head/neck: Unbitted or minimal warm-gold energetic knotwork throat/chest band integrated with the saddle so the head and dark muzzle remain clean `[stated: pegasus-flight.png, interview q68, q69]`
 
 Wardrobe states (name each; list every garment that changes):
-- `default`: Embroidered Viking tribal-tattooed saddle of warm-gold energetic light and worn brown-leather folder saddlebags `[stated: interview q68, q69]`
+- `default`: Embroidered Viking tribal-tattooed saddle of warm-gold energetic light and worn brown-leather folder saddlebags loaded with Hermes’s rectilinear cord-bound parchment folders and codices (with the leather lid either buckled over the folders for flight or lifted open during handoff) `[stated: interview q68, q69]`
+- `empty-saddlebags`: Embroidered Viking tribal-tattooed saddle of warm-gold energetic light and worn brown-leather dispatch saddlebags containing zero parchment or folders—either with the leather lid closed and buckled flat (empty lid-closed view) or with the top strap unbuckled and leather flap lifted open (empty lid-open view for unloading/loading during message handoffs) `[stated: interview q69, q71]`
 - `bare`: Completely unbridled and unsaddled—no saddle, no saddlebags, no straps—showing only Pegasus’s white/pale-silver equine body and wings as in `pegasus-flight.png` `[stated: pegasus-flight.png, interview q69]`
 
 Never worn:
@@ -78,16 +80,17 @@ Never worn:
 ## Variables
 - Expression range: Calm noble alertness, focused forward drive in flight, and spirited ear-pricked curiosity `[stated: interview q70]`
 - Out of character: Panicked wild-eyed terror, vicious bared-teeth aggression, dull exhaustion, or cartoon human-like facial grimaces `[stated: interview q70]`
-- Pose and action range: Standing alert at gateway thresholds, trotting or cantering along stone causeways and viaducts, rearing or launching into flight, soaring on spread wings, and banking or landing beside or carrying `hermes` `[stated: interview q71]`
+- Pose and action range: Standing alert at gateway thresholds, trotting or cantering along stone causeways and viaducts, rearing or launching into flight, soaring on spread wings, banking or landing beside or carrying `hermes`, and holding steady while `hermes` removes incoming parchment folders from the saddlebags and inserts outgoing folders `[stated: interview q71]`
 - Never does: Cartoon slapstick, vicious mauling, or stiff mechanical/robotic movement `[stated: interview q71]`
-- Props they may hold: Hermes’s cord-bound parchment folders and codices stowed in the worn brown-leather saddlebags (`default` state only; holds nothing in mouth or hooves) `[stated: interview q72]`
-- Wardrobe states allowed: `default`, `bare` `[stated: interview q69]`
+- Props they may hold: Hermes’s cord-bound parchment folders and codices stowed in the worn brown-leather saddlebags (`default` state carries loaded folders; `empty-saddlebags` and `bare` carry zero folders) `[stated: interview q69, q72]`
+- Wardrobe states allowed: `default`, `empty-saddlebags`, `bare` `[stated: interview q69]`
 
 ## Reference map
 | Candidate role | Shows |
 |---|---|
 | `world/references/pegasus-flight.md#pegasus-flight-anatomy` | Near-front rising flight pose, equine head and straight profile, dark slate-charcoal muzzle and nostrils, upright pointed ears, pale white-to-silver-grey coat and mane, dark charcoal hooves, deep chest/shoulders, slender tapering legs, and high shoulder-mounted multi-tiered feathered wings (`bare` state; dramatic right-side shadow and black background are excluded). |
 | `world/references/pegasus-body-turnaround.md#pegasus-default-body-turnaround` | Canonical 4-view ukiyo-e turnaround sheet on aged speckled parchment (`front`, `left-profile`, `right-profile`, `rear`) showing Pegasus in `default` tack with the warm-gold Nordic/Viking knotwork saddle and chest band and worn brown-leather dispatch saddlebags holding cord-bound parchment folders. |
+| `world/references/pegasus-tack-sheet.md#pegasus-saddlebag-states` | Canonical 4-panel ukiyo-e saddlebag states sheet on aged speckled parchment showing Pegasus's worn brown-leather dispatch saddlebag in (1) Empty, Lid Open, (2) Empty, Lid Closed & Buckled (no folders), (3) Loaded, Lid Open (with cord-bound parchment folders), and (4) Loaded, Lid Closed & Buckled (with cord-bound parchment folders). |
 
 ## Open
 - None. All character setup questions (`Q19–Q31`, recorded as items `61–73` in `world/interview.md`) are answered and resolved `[stated: interview q61-q73]`.
