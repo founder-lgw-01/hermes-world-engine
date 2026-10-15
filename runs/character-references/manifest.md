@@ -14,3 +14,4 @@ created: 2026-10-15T10:09:18+00:00
 | hermes-body-turnaround | Hermes | 1 | hermes-body-turnaround/02-image-1.png | hermes-body-turnaround/03-sidecar.md | 2026-10-15 |
 | hermes-sandals-turnaround | Hermes | 1 | hermes-sandals-turnaround/02-image-1.png | hermes-sandals-turnaround/03-sidecar.md | 2026-10-15 |
 | hermes-props-sheet | Hermes | 1 | hermes-props-sheet/02-image-1.png | hermes-props-sheet/03-sidecar.md | 2026-10-15 |
+| pegasus-body-turnaround | Pegasus | 1 | pegasus-body-turnaround/02-image-1.png | pegasus-body-turnaround/03-sidecar.md | 2026-10-15 |
