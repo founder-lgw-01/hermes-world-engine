@@ -54,6 +54,7 @@ capabilities; no provider probing in intake.
 |---|---|---|
 
 ## Approval scope
+- Gate mode (`strict` | `visual-only`): `strict`
 - Named artifact versions in this review package:
 - Actions this approval permits:
 - Separate approvals still required (spec/production, results, final acceptance):

@@ -83,6 +83,25 @@ folder. Required Markdown inputs must be `status: approved`; accepted media
 also require `verdict: accepted` on their authoritative record and the existing
 filing evidence. A selected foundation reused unchanged needs no new approval.
 
+### Visual-gate mode (`gate_mode: visual-only`)
+When the operator selects `gate_mode: visual-only` (or directs the agent to
+skip intermediate Markdown-only gates and stop only at visual or spend/publish
+boundaries), the agent still writes, hashes and marks `status: approved` on
+each required intermediate Markdown artifact (`00-intake-N.md`,
+`00-composition-N.md`, `01-foundation-N.md`, `02-sequence-N.md`,
+`02-storyboard-N.md`, `02-continuity-N.md`, `01-spec-N.md`, `05-spec-N.md`) in
+dependency order, citing the operator's `visual-only` scope authorization in the
+handoff. Under `gate_mode: visual-only`, the agent halts only at:
+1. **Unresolved scope/intent questions** that were not delegated,
+2. **Spend or external-publication gates** (paid image/video generation calls or
+   public hosting uploads, unless explicitly pre-authorized in the operator's
+   turn), and
+3. **Visual acceptance gates** (`02-render-N.md`, `04-render-N.md`,
+   `02-review-N.md` when visual mismatches require a decision, and
+   `05-record-N.md`), where the actual image or video is displayed via `MEDIA:`
+   for human `verdict: accepted` | `drifted`.
+`gate_mode: strict` (default when unspecified) stops at every Markdown stage gate.
+
 Sibling drafts in one review package (intake/composition brief or
 storyboard/continuity) may be reconciled together. They cite one another by
 exact path as working cross-references, not approved upstream dependencies.

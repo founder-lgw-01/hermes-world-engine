@@ -242,7 +242,7 @@ class StudioGateTests(unittest.TestCase):
         for required in ("## Revision impact", "not automatic regeneration",
                          "historical acceptance", "receiving producer",
                          "not independent review", "every artifact and version",
-                         "recorded SHA-256"):
+                         "recorded SHA-256", "gate_mode: visual-only"):
             self.assertIn(required, rules)
 
     def test_composition_halts_without_accepted_inputs_or_authorized_adapter(self) -> None:

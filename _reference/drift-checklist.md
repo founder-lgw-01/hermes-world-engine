@@ -37,9 +37,13 @@ Walk the character's bible top to bottom:
    something similar.
 6. **Wardrobe**: the state the spec names, garment by garment, color and
    material, including left/right symmetry and exact counts on paired items
-   (such as winged sandals, bracers, greaves, and helmet wings). Fails as: a
-   garment missing, a color shifted, extra ornament the bible does not list, or
-   asymmetrical/doubled appendages on one side vs. the other.
+   (such as winged sandals, bracers, greaves, and helmet wings) where the
+   camera angle allows them to be seen. When one limb or boot is behind the
+   other in a 3/4 or profile stride, an outer-edge feature on the far side is
+   naturally occluded (`cannot see`), not forced into the gap between the legs.
+   Fails as: a garment missing, a color shifted, extra ornament the bible does
+   not list, or an occluded outer feature drawn on the wrong (inner) side just
+   to make both visible.
 7. **Variables in range**: expression, pose, props inside the range the bible
    allows. Fails as: an expression the bible calls out of character.
 8. **Relative scale** (2 or more characters): height and build against each

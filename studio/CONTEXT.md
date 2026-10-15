@@ -32,7 +32,10 @@ contracts still own setup, image specification/render/filing and motion.
 ## Current boundary
 
 The local intake, planning, composition-specification and review contracts are
-available. No composition adapter is implemented by this extension. Stop before
+available. Optional `gate_mode: visual-only` (see `../_reference/studio-rules.md`)
+auto-advances intermediate Markdown-only gates while preserving all files/hashes
+and stopping only at spend/publish and visual `MEDIA:` acceptance gates. No
+composition adapter is implemented by this extension. Stop before
 voice generation, finishing or final rendering until a separate authorized task
 provides an execution route and its checks. Draft contracts or templates are
 not accepted media, technical feasibility evidence or permission to spend.
