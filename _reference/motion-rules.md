@@ -39,10 +39,16 @@ Do not route a decoded frame through `01_spec`/`02_render` or invent their outpu
    blocks extraction for use as an accepted continuation source.
 2. Measure the source, record the zero-based decoded frame index and timestamp,
    and perform decode-only extraction. Inspect the actual PNG and nearby motion
-   samples. Record its dimensions, format, frame SHA-256 and exact derivation.
-   A crop, repaint, interpolation or other alteration is not this mode. Keep
-   one home per PNG; later versions use new filenames, never overwrite an
-   accepted frame. A matching image does not prove a continuous gait.
+   samples. Check whether the predecessor decelerates in its final second: if it
+   slows down before the final frame, extract the earlier full-stride frame (and
+   record that frame index as the outgoing splice point) rather than the
+   decelerated final frame. Record its dimensions, format, frame SHA-256 and
+   exact derivation. A crop, repaint, interpolation or other alteration is not
+   this mode. Keep one home per PNG; later versions use new filenames, never
+   overwrite an accepted frame. A matching image does not prove a continuous
+   gait: state an explicit step cadence (steps per second) and locked exposure in
+   the continuation brief/spec so the next generation does not default to a
+   slower pace or shifted brightness.
 3. Copy `_templates/motion-source.md` to
    `runs/motion/<set>/<shot>/00-source-N.md`. This source record is the derived
    frame's sidecar and filing home, not a second approval tracker. Record real

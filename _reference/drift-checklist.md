@@ -36,8 +36,10 @@ Walk the character's bible top to bottom:
 5. **Signature features**: each present. Fails as: absent, or swapped for
    something similar.
 6. **Wardrobe**: the state the spec names, garment by garment, color and
-   material. Fails as: a garment missing, a color shifted, extra ornament the
-   bible does not list.
+   material, including left/right symmetry and exact counts on paired items
+   (such as winged sandals, bracers, greaves, and helmet wings). Fails as: a
+   garment missing, a color shifted, extra ornament the bible does not list, or
+   asymmetrical/doubled appendages on one side vs. the other.
 7. **Variables in range**: expression, pose, props inside the range the bible
    allows. Fails as: an expression the bible calls out of character.
 8. **Relative scale** (2 or more characters): height and build against each
@@ -94,7 +96,7 @@ Each line of a motion check gets 1 of 3 findings, using the same words:
 
 | The motion has | At risk | Guard in the prompt |
 |---|---|---|
-| a character walking or running | face, proportions, limb length, gait | state build and the face lines; say the stride is steady and the stride's length does not change across the shot |
+| a character walking or running | face, proportions, limb length, gait, paired footwear/wing symmetry, end-of-clip deceleration | state build, face lines, and left/right footwear symmetry; specify an explicit step cadence (e.g., ~2 steps/second) and say the stride pace does not slow down in the final second |
 | a trailing garment, cloak, chlamys, or hair in motion | wardrobe design, hair outline | preserve colour/material/trim while cloth follows the action; settle only if the brief requires it |
 | a camera push or dolly | palette, light direction, medium, scale | say the light and medium do not change as the camera moves; state that the frame ends on the same style, not a rendered 3D look |
 | a camera move at all | aspect ratio, framing horizon | say the frame stays 16:9 and the horizon does not tilt |

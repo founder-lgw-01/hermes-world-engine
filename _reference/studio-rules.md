@@ -158,7 +158,11 @@ outputs; a new context or selected version requires impact review before use.
 Re-review is not automatic regeneration. Record why unchanged reuse is valid,
 or the smallest revised output requiring approval. Changed intent returns to
 its brief; changed geography returns to setup; changed clips return to sequence
-review before composition. Record this impact in the new artifact's handoff,
+review before composition. Post-playback operator drift notes and next-pass
+recommendations on an already accepted sequence or export are recorded by
+opening the next numbered `runs/studio/<production>/02-review-N.md` (`status: draft`),
+preserving the prior accepted review and routing each item to its upstream owner.
+Record this impact in the new artifact's handoff,
 not a new global tracker or an invented status enum. A planning decision may
 remain blocked without marking an old accepted asset rejected.
 

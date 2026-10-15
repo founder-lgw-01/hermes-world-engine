@@ -32,7 +32,7 @@ accepted and filed. Do not populate observations from planned states or prompts.
 ## Handoff
 - Receiving composition producer and exact selected clip set:
 - Story success, identity/continuity checks and any review limitations:
-- Revision impact and required upstream correction, if any:
+- Revision impact and required upstream correction, if any (for post-playback operator drift notes or next-pass recommendations, open the next numbered `runs/studio/<production>/02-review-N.md` as `status: draft` and route each item to its owning contract while preserving the prior accepted review):
 
 ## Open
 - Required unresolved mismatches or uninspected evidence:
