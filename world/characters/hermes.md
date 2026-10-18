@@ -46,16 +46,16 @@ sources:
 - Facial hair: Clean-shaven. [stated: interview q23; interview q31]
 
 ## Build
-- Height against each other character, by name: Unknown until another character is added. [stated: interview q24]
+- Height against Pegasus: Hermes' shoulder height is roughly equal to Pegasus's withers (chest-to-shoulder height), while Pegasus's head and upright ears rise above Hermes' winged helmet. [inferred: from Pegasus bible]
 - Shoulders: Broad and defined. [stated: interview q24]
 - Limb length: Athletic, powerful, defined limbs; exact proportion is unknown. [stated: interview q24]
 - Weight: Substantial lean weight; exact weight is unknown. [stated: interview q24]
 - Hands: Large, robust hands capable of a firm caduceus grip. [stated: interview q24]
 
 ## Signature features
-1. Not specified while Hermes is the only character; do not invent a cross-state signature feature. [stated: interview q25]
-2. Not specified while Hermes is the only character; do not invent a cross-state signature feature. [stated: interview q25]
-3. Not specified while Hermes is the only character; do not invent a cross-state signature feature. [stated: interview q25]
+1. Winged helmet with feathered side wings. [stated: interview q26]
+2. Twin-serpent winged caduceus. [stated: interview q26]
+3. Brown leather sandals with pale feathered heel wings. [stated: interview q26]
 
 ## Wardrobe
 Default outfit, garment by garment, color and material:
